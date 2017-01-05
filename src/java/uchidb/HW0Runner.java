@@ -81,7 +81,7 @@ public class HW0Runner {
 
 	// This class is a factory for a singleton containers class.
 	// https://www.tutorialspoint.com/java/java_using_singleton.htm
-	public static Containers<Integer, String> getContainers() {
+	public static synchronized Containers<Integer, String> getContainers() {
 		if (containersInstance == null) {
 			containersInstance = new MyContainers<Integer, String>();
 		}
