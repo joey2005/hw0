@@ -52,9 +52,7 @@ public class ContainersTest {
 			// Only use them when necessary!
 			// Putting primitive types into containers is primary reason why
 			intClassArray[i] = intArray[i];
-		}
-		
-		
+		}		
 	}
 
 	@Test
@@ -92,15 +90,13 @@ public class ContainersTest {
 		assertTrue("Map correct", null == cont.getValueFromMap(strArray[5]));
 		assertTrue("Map correct", new Integer(-1) != cont.getValueFromMap(strArray[5], new Integer(-1)));
 		assertFalse(expFalse);
-		assertTrue(expTrue);
-		
+		assertTrue(expTrue);		
 	}
 
 	@Test 
 	public void testContSingleton(){
 		Containers<Integer, String> cont2 = HW0Runner.getContainers();
 		assertTrue(cont == cont2);
-		assertTrue("Map correct", intClassArray[0] == cont2.getValueFromMap(strArray[0]));
-		
+		assertTrue("Map correct", intClassArray[0] == cont2.getValueFromMap(strArray[0]));		
 	}
 }
