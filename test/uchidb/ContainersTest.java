@@ -3,6 +3,7 @@
  */
 package uchidb;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
@@ -100,7 +101,6 @@ public class ContainersTest {
 		Containers<Integer, String> cont2 = HW0Runner.getContainers();
 		assertTrue(cont == cont2);
 		assertTrue("Map correct", intClassArray[0] == cont2.getValueFromMap(strArray[0]));
-		
 		
 	}
 }
